@@ -12,9 +12,9 @@ weatherApp.controller('weatherCtrl', function($scope, $http){
 		}
 	};
 
-	$http.get("http://ip-api.com/json").then(function(data){
-		vm.lat= data.lat;
-		vm.lon= data.lon;
+	$http.get("https://freegeoip.net/json").then(function(data){
+		vm.lat= data.latitude;
+		vm.lon= data.longitude;
 
 		var apiKey = "6cc5f23754bd24d08077d62e1e8147af";
 		var openWeatherURL = "http://api.openweathermap.org/data/2.5/weather?lat="+ vm.lat +"&lon="+ vm.lon +"&APPID="+ apiKey;
