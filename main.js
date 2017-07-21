@@ -1,1 +1,0 @@
-var weatherApp = angular.module('app', []);
