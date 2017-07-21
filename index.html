@@ -1,20 +1,185 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 <head>
 	<title>Weather</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="main.js"></script>
-	<script src="weather.js"></script>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="weather.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+	<link rel="stylesheet" type="text/css" href="css/owfont-regular.css" >
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Francois+One|Lemonada:300,400,700|Oxygen:400,700|Signika+Negative:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet">
+	<link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+
+
+	
 </head>
-<body ng-controller="weatherCtrl">
-{{channelInfo.heading}}
-{{channelInfo.subheading}}
-{{description}}
+<body>
+
+<!--HEADER-->
+
+<header id="main-header">
+<div class="container">
+<div class="row center-xs ">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 start-sm start-md start-lg middle-xs middle-sm middle-md middle-lg">
+		<h1 id="banner">
+			EveryWeather
+		</h1>
+		<h4 id="slogan">
+			Meteorological observations from your local weather station
+		</h4>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 end-sm end-md end-lg middle-xs middle-sm middle-md middle-lg">
+		<h5 id="location">
+			
+		</h5>
+		
+	</div>
+</div>
+</div>
+</header>
+
+<!--FIRST DAY-->
+
+<section id="top">
+	<div class="container">
+	<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+		<div class="topPicture col-xs-4 col-sm-4 col-md-5 col-lg-5 around-xs around-sm around-md around-lg">
+		<div>
+			<i class="fa fa-tint fa-3x" aria-hidden="true"></i>
+				<h3 class="topHumidity">
+				</h3>
+				<h6>
+					Humidity
+				</h6>
+		</div>
+			<div>
+				<i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i>
+
+				<h3 class="topWindSpeed">
+				</h3>
+				<h6>
+					Wind
+				</h6>
+			</div>
+				
+		</div>
+		<div class="topIcon col-xs-4 col-sm-4 col-md-2 col-lg-2">
+		<i class="owf owf-5x"></i>
+				<h3 class="topWeather">
+					
+				</h3>
+
+		</div>
+	
+		<div class="topInfo col-xs-4 col-sm-4 col-md-5 col-lg-5">
+		<h2>
+			
+		</h2>
+		<p>
+			
+		</p>
+		</div>
+	</div>
+		
+	</div>
+		
+</section>
+
+<!--SECOND DAY-->
+
+<section id="middle">
+	<div class="container">
+	<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+		<div class="middleIcon col-xs-4 col-sm-4 col-md-2 col-lg-2">
+		<i class="owf owf-5x"></i>
+			<h3 class="middleWeather">
+					
+			</h3>
+		</div>
+	
+		<div class="middleInfo col-xs-4 col-sm-4 col-md-5 col-lg-5">
+		<h2>
+			
+		</h2>
+		<p>
+			
+		</p>
+		</div>
+		<div class="middlePicture col-xs-4 col-sm-4 col-md-5 col-lg-5 around-xs around-sm around-md around-lg">
+			<div>
+			<i class="fa fa-tint fa-3x" aria-hidden="true"></i>
+				<h3 class="middleHumidity">
+				</h3>
+				<h6>
+					Humidity
+				</h6>
+		</div>
+			<div>
+				<i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i>
+
+				<h3 class="middleWindSpeed">
+				</h3>
+				<h6>
+					Wind
+				</h6>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+		
+</section>
+
+<!--THIRD DAY -->
+
+<section id="bottom">
+	<div class="container">
+	<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+		<div class="bottomPicture col-xs-4 col-sm-4 col-md-5 col-lg-5 around-xs around-sm around-md around-lg">
+		<div>
+			<i class="fa fa-tint fa-3x" aria-hidden="true"></i>
+				<h3 class="bottomHumidity">
+				</h3>
+				<h6>
+					Humidity
+				</h6>
+		</div>
+			<div>
+				<i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i>
+
+				<h3 class="bottomWindSpeed">
+				</h3>
+				<h6>
+					Wind
+				</h6>
+			</div>
+
+		</div>
+		<div class="bottomIcon col-xs-4 col-sm-4 col-md-2 col-lg-2">
+		<i class="owf owf-5x"></i>
+				<h3 class="bottomWeather">
+					
+				</h3>
+		</div>
+	
+		<div class="bottomInfo col-xs-4 col-sm-4 col-md-5 col-lg-5">
+		<h2>
+			
+		</h2>
+		<p>
+			
+		</p>
+		</div>
+	</div>
+		
+	</div>
+		
+</section>
 
 </body>
+
 </html>

@@ -1,0 +1,146 @@
+body {
+	background: #155799;
+	background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Lemonada', 'Syncopate', sans-serif;
+}
+.container {
+	margin: auto;
+	height: auto;
+}
+#main-header {
+	padding: 20px;
+}
+h1 {
+	color: white;
+	font-weight: 900;
+	font-size: 27px;
+	margin: 0px;
+}
+h2 {
+	font-family: 'Signika Negative', sans-serif;
+	color: white;
+	font-size: 75px;
+	font-weight: bolder;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+h3 {
+	font-weight: 700;
+	color: white;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+h4 {
+	margin: 0;	
+	font-size: 10px;
+	color: white;
+}
+h5 {
+	color: white;
+	font-weight: 900;
+	font-size: 27px;
+	margin-bottom: 10px;
+	font-family: 'Oxygen', sans-serif;
+}
+h6 {
+	opacity: 0.7;
+	color: white;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 14px;
+	margin-top: 3px;
+
+}
+p {
+	color: white;
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: bolder;
+	font-size: 20px
+	margin-top: 0;
+}
+.owf-5x {
+	padding: 0;
+	color: white;
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+.fa {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+#top {
+	
+margin: 0;
+}
+#top .row {
+	height: 180px;
+}
+#top .topPicture {	
+	height: 100%;
+	display: inline-flex;
+}
+.topIcon {
+	background-image: url(images/iconbgd.jpg);
+	background-size: cover;
+	border-top: 5px ridge #A0B2B8;
+	height: 100%;
+
+
+}
+#top .topInfo {
+	
+	background: url(images/topInfoBgd.jpg)no-repeat center center;
+	height: 100%;
+	background-size: cover;
+}
+
+#middle {
+margin: 0;
+
+}
+#middle .row {
+	height: 180px;
+}
+#middle .middlePicture {	
+	display: inline-flex;
+	height: 180px;
+	margin: 0;
+}
+#middle .middleIcon {	height: 180px;
+	background-image: url(images/iconbgd.jpg);
+	background-size: cover;
+	border-top: 5px ridge #A0B2B8;
+}
+#middle .middleInfo {
+	height: 180px;	
+	background-image: url('images/middleInfoBgd.jpg');
+	background-size: cover;
+}
+
+#bottom {
+margin: 0;
+
+}
+
+#bottom .row {
+	height: 180px;
+}
+#bottom .bottomPicture {
+	height: 180px;
+	margin: 0;
+	display: inline-flex;
+}
+#bottom .bottomIcon {	height: 180px;
+	background-image: url('images/iconbgd.jpg');
+	background-size: cover;
+	border-top: 5px ridge #A0B2B8;
+}
+#bottom .bottomInfo {	
+	height: 180px;
+	background-image: url('images/bottomInfoBgd.jpg');
+	background-size: cover;
+}
+
