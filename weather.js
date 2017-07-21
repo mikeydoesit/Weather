@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 			$('#location').html("Forecast for " + location);
 
-			let openWeatherURL = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&APPID=6cc5f23754bd24d08077d62e1e8147af";
+			let openWeatherURL = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&APPID=6cc5f23754bd24d08077d62e1e8147af";
 			$.getJSON(openWeatherURL).then(function(response2) {
 					
 					console.log(response2);
